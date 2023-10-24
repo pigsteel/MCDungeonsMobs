@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "dungeonsmobs",
+  "version": "${version}",
+  "name": "Dungeonsmobs",
+  "description": "Port of mobs from Minecraft Dungeons and Minecraft Earth.",
+  "authors": [
+    "Pigsteel"
+  ],
+  "contact": {
+    "repo": "https://github.com/pigsteel/dungeonsmobs"
+  },
+  "license": "MIT",
+  "icon": "assets/dungeonsmobs/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.pigsteel.dungeonsmobs.client.DungeonsmobsClient"
+    ],
+    "main": [
+      "com.pigsteel.dungeonsmobs.Dungeonsmobs"
+    ]
+  },
+  "mixins": [
+    "dungeonsmobs.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.24",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
